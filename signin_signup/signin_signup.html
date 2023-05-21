@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive login and signup</title>
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="sisu.css">
+
+    <!--Boxicons icons that are free for use-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="contain forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form action="#">
+
+                    <div>
+                        <p id="valert"></p>
+                    </div>
+
+                    <div class="field input-field">
+                        
+                        <input type="email" id="lname" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        
+                        <input type="password" id="lpass" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button class="ls" style="margin-bottom: 5px;" id="lsub">Login</button>
+                        .<button class="secret" id="s"><a href="/make_your_own/make_your_profile.html">Open profile</a></button>
+                    </div>
+
+                    <div class="form-link" id="su">
+                        <span>Don't have an account? <a href="#" class="link signup-link" >Signup</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Signup Form-->
+
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#">
+
+                    <div>
+                        <p id="ralert"></p>
+                    </div>
+                    
+                    <div class="field input-field">
+                        
+                        <input type="email" id="sname" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        
+                        <input type="password" id="spass1" placeholder="Password" class="password">
+                        
+                    </div>
+
+                    <div class="field input-field">
+                        
+                        <input type="password" id="spass2" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    
+
+                    <div class="field button-field">
+                        <button id="ssub">Signup</button>
+                    </div>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--JavaScript link-->
+    <script src="sisu.js"></script>
+    
+</body>
+</html>

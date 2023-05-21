@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+.tn {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+  /* Add a black background color to the top navigation */
+.navigation {
+    float: left;
+    background-color: white;
+    overflow: hidden;
+  }
+
+
+  
+  /* Style the links inside the navigation bar */
+.navigation a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navigation a:hover {
+    float: left;
+    background-color: rgb(20, 18, 18);
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+.navigation a.active {
+    float: right;
+    background-color: white;
+    color: black;
+  }
+
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 200px;
+    max-width: 2000px;
+    padding-top: 200px;
+    
+
+}
+
+.profile-container .img {
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0 0 0 7px #fff, 0 0 0 8px #ddd;
+}
+
+.profile-container .name {
+    padding-left: 100px;
+}
+
+.profile-container .write-up {
+    width: 500px;
+    padding-left: 200px;
+}
+
+.example-text {
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.example-container .piece2 {
+    width: 400px;
+}
+
+.location-text {
+    padding-top: 100px;
+    padding-left: 150px;
+    font-family: 'Playfair Display';
+    font: 700;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.place {
+    padding-right: 100px;
+    width: 700px;
+    font-size: 80px;
+}
+

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
+.marietta {
+    background-image: url('https://www.mariettaga.gov/ImageRepository/Document?documentID=2576');
+    opacity: 50%;
+    height: 950px;
+      /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  /* Needed to position the navbar */
+    position: relative;
+}
+
+
+.tn {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+.title {
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    
+    font-size: 85px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  /* Add a black background color to the top navigation */
+.navigation {
+    float: right;
+    background-color: white;
+    overflow: hidden;
+  }
+
+.col {
+    flex: 33.33%;
+}
+  
+  /* Style the links inside the navigation bar */
+.navigation a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .navigation a:hover {
+    float: left;
+    background-color: rgb(20, 18, 18);
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+.navigation a.active {
+    float: right;
+    background-color: white;
+    color: black;
+  }
+
+  .c-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: white;
+    padding: 0 35px;
+  }
+
+.wrapper {
+    max-width: 1500px;
+    width: 100%;
+    position: absolute;
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background: #83cf83;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0);
+}
+
+.wrapper i:first-child {
+    left: -22px;
+
+}
+
+.wrapper i:last-child {
+    right: -54px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel.dragging{
+    
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    
+    height: 600px;
+    list-style: none;
+    background: linear-gradient(to top, #48633d, #83cf83);
+    border-radius: 8px;
+    
+    cursor: pointer;
+    padding-bottom: 15px;
+    
+    flex-direction: column;
+}
+
+.card .img {
+    
+    padding-top: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.card .img img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.card h2 {
+    padding-top: 150px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 5px 0 5px;
+}
+
+.card h3 {
+    
+    color: white;
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 5px 0 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+.containt {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}

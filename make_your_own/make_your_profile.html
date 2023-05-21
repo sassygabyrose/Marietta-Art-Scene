@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="make_your_own.css">
+    <script src="myo.js" defer></script>
+    <script src="ga_art1.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navigation">
+        <a href="/homepage/index.html">Home</a>
+        <a href="/georgia_art_page/ga_page.html">Ga Art</a>
+        <a href="/contempoary_page/cont_page.html">Contemporary Art</a>
+        <a href="/signin_signup/signin_signup.html">Sign In or Sign Up</a>
+    </div>
+
+    <section>
+    
+    <section class="profile-container">
+        <div class="image-name">
+            <div class="img" id="box">
+                <input type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
+                <label for="file" class="upload-icon">Upload Profile Image</label>
+            </div>
+            
+            <!-- <img class="img" src="https://static.wixstatic.com/media/fb447d_db9bacc94db945d093b8215aef7875f7~mv2.jpeg/v1/fill/w_444,h_445,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/fb447d_db9bacc94db945d093b8215aef7875f7~mv2.jpeg"> -->
+            <input type="text" class="name" placeholder="Name here" class="input">
+            
+        </div>
+        
+        <div class="write-up">
+            <div class="field input-field">
+                <input type="text" class="wu" placeholder="Type Write-up here" class="input">
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="example-text">
+        <h1>Below are some of my art pieces</h1>
+    </div>
+
+    <section class="example-container">
+        <div class="art">
+            
+            <input type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
+            <label for="file" class="ui">Upload Profile Image</label>
+            <input type="text" class="art_name" placeholder="Type the Art Piece's name here" class="input">
+        </div>
+
+        <div class="art">
+            
+            <input type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
+            <label for="file" class="ui">Upload Profile Image</label>
+            <input type="text" class="art_name" placeholder="Type the Art Piece's name here" class="input">
+        </div>
+
+        <div class="art">
+            
+            <input type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
+            <label for="file" class="ui">Upload Profile Image</label>
+            <input type="text" class="art_name" placeholder="Type the Art Piece's name here" class="input">
+        </div>
+
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+.tn {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+  /* Add a black background color to the top navigation */
+.navigation {
+    float: left;
+    background-color: white;
+    overflow: hidden;
+  }
+
+
+  
+  /* Style the links inside the navigation bar */
+.navigation a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navigation a:hover {
+    float: left;
+    background-color: rgb(20, 18, 18);
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+.navigation a.active {
+    float: right;
+    background-color: white;
+    color: black;
+  }
+
+
+.title {
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards .card {
+    margin-bottom: 30px;
+}
+.card:hover{
+    box-shadow: 0 3px 6px grey;
+    border-radius: 10%;
+
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 1500px;
+    padding-left: 100px;
+    
+    background-color: #ddd;
+    border-radius: 10%;
+    
+    
+
+}
+
+.profile-container .img {
+    width: 300px;
+    height: 300px;
+    
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0 0 0 7px #fff, 0 0 0 8px #ddd;
+}
+
+.profile-container .name {
+    padding-left: 100px;
+}
+
+.profile-container .write-up {
+    width: 500px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.bn {
+    text-decoration: none;
+    color: black;
+}
+
+.piece {
+    width: 300px;
+    padding-right: 100px;
+}
